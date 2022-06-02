@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>会员回执单</title>
+<script type="text/javascript">
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+</script>
+<style type="text/css">
+#form1 {
+	color: #000;
+}
+.text1 {
+	font-size: 24px;
+	color: #000;
+	text-decoration: blink;
+}
+body {
+	background-image: url(images/%E4%BC%9A%E5%91%98%E7%99%BB%E5%BD%95%E8%83%8C%E6%99%AF%E5%9B%BE.jpg);
+	background-repeat: no-repeat;
+}
+</style>
+</head>
+
+<body>
+<form id="form1" name="form1" method="post" action="">
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <table width="600" border="0" align="center">
+  <tr bgcolor="#FFFFFF">
+    <td bgcolor="#F7E8E8"><table width="600" border="1" align="center">
+      <caption>
+        会员回执单
+        </caption>
+      <tr>
+        <td>性别</td>
+        <td><input type="radio" name="radio" id="gender" value="man" />
+          <label for="radio2">男&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="radio" id="gender" value="girl" />
+            女</label></td>
+      </tr>
+      <tr>
+        <td>年龄阶段</td>
+        <td><label>
+          <input type="radio" name="zy" value="1" id="zy_0" />
+          18-30</label>
+          <br />
+          <label>
+            <input type="radio" name="zy" value="2" id="zy_1" />
+            30-40 </label>
+          <br />
+          <label>
+            <input type="radio" name="zy" value="3" id="zy_2" />
+            40-60</label></td>
+      </tr>
+      <tr>
+        <td>平时购物方式</td>
+        <td><input name="intrest" type="checkbox" id="intrest" value="上网" />
+          <label for="intrest">手机&nbsp;&nbsp;&nbsp;
+            <input name="intrest" type="checkbox" id="intrest" value="追剧" />
+            电脑&nbsp; </label>
+          <input name="intrest2" type="checkbox" id="intrest2" value="上网" />
+          <label for="intrest2">购物店&nbsp;&nbsp;
+            <input name="intrest2" type="checkbox" id="intrest2" value="追剧" />
+            子女买 </label></td>
+      </tr>
+      <tr>
+        <td>所处地点</td>
+        <td><select name="jumpMenu" id="jumpMenu" onchange="MM_jumpMenu('parent',this,0)">
+          <option value="1">青岛</option>
+          <option value="2">日照</option>
+          <option value="3">潍坊</option>
+        </select></td>
+      </tr>
+      <tr>
+        <td>对我们的建议</td>
+        <td><label for="textarea"></label>
+          <textarea name="textarea" id="textarea" cols="45" rows="5"></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2" class="text1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;感谢您的填写</td>
+      </tr>
+      </table>      <label></label></td>
+  </tr>
+  </table>
+</form>
+</body>
+</html>
