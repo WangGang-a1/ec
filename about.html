@@ -4,12 +4,14 @@
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
    		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>关于我们</title>
+		<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
 		<style type="text/css">
 			#apDiv1 {
 				position:absolute;
-				width:803px;
-				height:315px;
+				width:60%;
+				height:40%;
 				z-index:1;
+				margin: 0px auto;
 				left: 269px;
 				top: 183px;
 				background-color: #D3A05C;
@@ -25,10 +27,53 @@
 	</head>
 
 <body>
-<img src="images/关于我们.jpg" width="1350" height="700" />
-<div id="apDiv1">
-  <p>饰爱饰品店</p>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <p> <a class="navbar-brand" href="index.html">饰爱饰品</a></p>
+        <p><a class="navbar-brand" href="#">&nbsp;</a> </p>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">首页&nbsp; <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item" >
+             <a class="nav-link" href="landing.html">会员登录</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">商品分类</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">耳饰</a>
+                <a class="dropdown-item" href="#">项链</a>
+				<a class="dropdown-item" href="#">手链</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">情侣专区</a>
+              </div>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" href="#">售后说明</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">关于我们</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="搜索" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜索</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+<div id="Layer1" style="position:absolute; width:100%; height:100%; z-index:-1">  
+<img src="images/about.jpg" height="100%" width="100%"/>  
+<div id="apDiv1" >
+	<p></p>
+	<p></p>
+  <p>饰爱饰品</p>
   <p>饰爱饰品是一家致力于打造最美的作品，让爱有所得，美丽的人终究有属于自己的时尚感。</p>
+  <p><a>饰爱饰品--始创于2021年</a></p>
 </div>
+	</div>
 </body>
 </html>

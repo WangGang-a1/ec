@@ -1,54 +1,119 @@
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-   		<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>登录档</title>
+<!DOCTYPE html><html><head><meta charset="utf-8">
+
+<title>登录</title>
 <link rel="shortcut icon" href="favicon.ico">
-		<!-- Bootstrap -->
-	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
-
-<style type="text/css">
-#form1 table {
-	color: #333;
-}
-body {
-	background-image: url(images/%E4%BC%9A%E5%91%98%E7%99%BB%E5%BD%95%E8%83%8C%E6%99%AF%E5%9B%BE.jpg);
-	background-repeat: no-repeat;
-}
-</style>
+<link href="css/css.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/normalize.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
 </head>
-
 <body>
-<form id="form1" name="form1" method="post" action="huizhibiao.html">
-  <p>&nbsp;</p>
-  <p>&nbsp;</p>
-  <p>&nbsp;</p>
-  <p>&nbsp;</p>
-  <table width="600" align="center" >
-    <caption>用户登录<br />
-      <br />
-    </caption>
-    <tr>
-      <td align="center">用户名</td>
-      <td><label for="textfield"></label>
-        <input name="textfield" type="text" id="textfield" size="40" /></td>
-    </tr>
-    <tr>
-      <td align="center">密码</td>
-      <td><label for="textfield2"></label>
-        <input name="textfield2" type="password" id="textfield2" size="40" /></td>
-    </tr>
-    <tr align="center">
-      <td colspan="2"><input type="submit" name="button" id="button" value="提交" />
-        &nbsp;
-        <input type="reset" name="button1" id="button1" value="重置" /></td>
-    </tr>
-  </table>
-  <p>&nbsp;</p>
-  <p>
-    
-  </p>
+	 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <p> <a class="navbar-brand" href="index.html">饰爱饰品</a></p>
+        <p><a class="navbar-brand" href="#">&nbsp;</a> </p>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">首页<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item" >
+             <a class="nav-link" href="landing.html">会员登录</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">商品分类</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">耳饰</a>
+                <a class="dropdown-item" href="#">项链</a>
+				<a class="dropdown-item" href="#">手链</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">情侣专区</a>
+              </div>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" href="#">售后说明</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">关于我们</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="搜索" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜索</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+<div id="Layer1" style="position:absolute; width:100%; height:100%; z-index:-1">  
+<img src="images/background.jpg" height="100%" width="100%"/>  
+	</div>
+<div style="text-align:center; clear:both; font-family: 'Titillium Web', sans-serif;">
+<script src="js/statics.js" type="text/javascript"></script>
+</div>
+<div class="form">
+<ul class="tab-group">
+<li class="tab "><a href="#signup">注册</a></li>
+<li class="tab active"><a href="#login">登录</a></li>
+</ul>
+<div class="tab-content">
+
+<div id="login">
+<h1>欢迎登录</h1>
+<form action="index.html" method="post">
+<div class="field-wrap">
+<label>
+电子邮箱<span class="req">*</span>
+</label>
+<input type="email" required="" autocomplete="off">
+</div>
+<div class="field-wrap">
+<label>
+密码<span class="req">*</span>
+</label>
+<input type="password" required="" autocomplete="off">
+</div>
+<p class="forgot"><a href="#">忘记密码？</a></p>
+<button class="button button-block">登录</button>
 </form>
-</body>
-</html>
+</div>
+
+<div id="signup">
+    <h1>注册您的账号</h1>
+    <form action="landing.html" method="post">
+    <div class="top-row">
+    <div class="field-wrap">
+    <label>
+    姓<span class="req">*</span>
+    </label>
+    <input type="text" required="" autocomplete="off">
+    </div>
+    <div class="field-wrap">
+    <label>
+    名<span class="req">*</span>
+    </label>
+    <input type="text" required="" autocomplete="off">
+    </div>
+    </div>
+    <div class="field-wrap">
+    <label>
+    电子邮箱<span class="req">*</span>
+    </label>
+    <input type="email" required="" autocomplete="off">
+    </div>
+    <div class="field-wrap">
+    <label>
+    用户密码<span class="req">*</span>
+    </label>
+    <input type="password" required="" autocomplete="off">
+    </div>
+    <button type="submit" class="button button-block">注册</button>
+   
+    </form>
+    </div>
+</div>
+</div> 
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/landing.js"></script>
+</body></html>
