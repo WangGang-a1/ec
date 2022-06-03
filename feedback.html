@@ -1,0 +1,181 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>会员回执单</title>
+<script type="text/javascript">
+function MM_jumpMenu(targ,selObj,restore){ 
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+</script>
+<style type="text/css">
+#form1 {
+	color: #000;
+}
+.text1 {
+	font-size: 24px;
+	color: #000;
+	text-decoration: blink;
+}
+body {
+	background-image: url("images/background.jpg");
+	background-repeat: no-repeat;
+}
+</style>
+	<link rel="shortcut icon" href="favicon.ico">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <p> <a class="navbar-brand" href="index.html">饰爱饰品</a></p>
+        <p><a class="navbar-brand" href="#">&nbsp;</a> </p>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">首页&nbsp; <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item" >
+             <a class="nav-link" href="landing.html">会员登录</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">商品分类</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="earrings.html">耳饰</a>
+                <a class="dropdown-item" href="necklace.html">项链</a>
+				<a class="dropdown-item" href="bracelet.html">手链</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="couple.html">情侣专区</a>
+              </div>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" href="feedback.html">售后说明</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">关于我们</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="搜索" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜索</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+<form id="form1" name="form1" method="post" action="">
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <table width="600" border="0" align="center">
+  <tr bgcolor="#FFFFFF">
+    <td bgcolor="#F7E8E8"><table width="600" border="1" align="center">
+      <caption>
+				<p style="text-align: center"><a href="index.html">提交</a></p>
+		  备注：提交成功自动返回首页
+		</caption>
+      <tr>
+        <td>性别</td>
+        <td><input type="radio" name="radio" id="gender" value="man" />
+          <label for="radio2">男&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="radio" id="gender" value="girl" />
+            女</label></td>
+      </tr>
+      <tr>
+        <td>年龄阶段</td>
+        <td><label>
+          <input type="radio" name="zy" value="1" id="zy_0" />
+          18-30</label>
+          <br />
+          <label>
+            <input type="radio" name="zy" value="2" id="zy_1" />
+            30-40 </label>
+          <br />
+          <label>
+            <input type="radio" name="zy" value="3" id="zy_2" />
+            40-60</label></td>
+      </tr>
+      <tr>
+        <td>平时购物方式</td>
+        <td><input name="intrest" type="checkbox" id="intrest" value="上网" />
+          <label for="intrest">电商平台&nbsp;
+          <input name="intrest" type="checkbox" id="intrest" value="追剧" />
+            官网&nbsp; </label>
+          <input name="intrest2" type="checkbox" id="intrest2" value="上网" />
+          <label for="intrest2">线下商场&nbsp;
+          <input name="intrest2" type="checkbox" id="intrest2" value="追剧" />
+            委托购买 </label></td>
+      </tr>
+      <tr>
+        <td>所处省份</td>
+        <td><select name="jumpMenu" id="jumpMenu" onchange="MM_jumpMenu('parent',this,0)">
+          <option value="1">山东省</option>
+          <option value="2">河北省</option>
+          <option value="3">山西省</option>
+		<option value="4">辽宁省</option>
+			<option value="5">吉林省</option>
+			<option value="6">黑龙江省</option>
+			<option value="7">江苏省</option>
+			<option value="8">河南省</option>
+			<option value="9">湖北省</option>
+			<option value="10">广东省</option>
+			<option value="11">海南省</option>
+			<option value="12">四川省</option>
+			<option value="13">贵州省</option>
+			<option value="14">云南省</option>
+			<option value="15">陕西省</option>
+			<option value="16">甘肃省</option>
+			<option value="17">青海省</option>
+			<option value="18">台湾省</option>
+			<option value="19">浙江省</option>
+			<option value="20">安徽省</option>
+			<option value="21">江西省</option>
+			<option value="22">福建省</option>
+			<option value="23">湖南省</option>
+			<option value="24">内蒙古自治区</option>
+			<option value="25">广西壮族自治区</option>
+			<option value="26">西藏自治区</option>
+			<option value="27">宁夏回族自治区</option>
+			<option value="28">新疆维吾尔自治区</option>
+			<option value="29">北京市</option>
+			<option value="30">天津市</option>
+			<option value="31">上海市</option>
+			<option value="32">重庆市</option>
+			<option value="33">香港特别行政区</option>
+			<option value="34">澳门特别行政区</option>
+			<option value="35">海外反馈必选</option>
+        </select></td>
+      </tr>
+      <tr>
+        <td>对我们的建议</td>
+        <td><label for="textarea"></label>
+          <textarea name="textarea" id="textarea" cols="45" rows="5"></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2" class="text1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;感谢您的填写</td>
+      </tr>
+      </table>      <label></label></td>
+  </tr>
+  </table>
+</form>
+	
+	 <footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>Copyright © 2019-2022 qltxy.cn All Rights Reserved. </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+	  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+</body>
+</html>
